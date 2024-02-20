@@ -1,0 +1,195 @@
+@import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css");
+@import url("https://puckzxz.github.io/NotAnotherAnimeTheme/build/v3/naat.v3.css");
+
+:root {
+    --bg-nagato: url('https://files.catbox.moe/m3vq27.jpg');
+    --theme-background-image: var(--bg-nagato);
+
+    /*Main*/
+    --main-theme-color: rgba(220, 17, 2, 0.7);
+    --theme-transparency: #000000c0;
+    --home-icon-image: url('https://i.imgur.com/AZFNXE3.jpeg');
+    --home-icon-image-zoom: 100%;
+    --home-icon-image-position: center;
+    --server-listing-width: 72px;
+    --mention-color: #faa61a0d;
+    --mention-sider: #faa61aff;
+    --mention-hover-color: #faa61a14;
+    --category-hover-color: #ffc5dd;
+    --unread-server-animation: none;
+    --video-screen-button-background-color: #c8c8c833;
+    --video-screen-button-foreground-color: #ffffffff;
+    --video-screen-button-background-hovor-color: #c8c8c866;
+    --video-screen-button-foreground-hovor-color: #ffffffff;
+    --member-listing-role-color: #ffffff;
+    --embed-background-transparency: #00000099;
+
+    --message-box-transparency: #00000099;
+    --message-box-backdrop-filter: 10px;
+    --message-hover-buttons-background: #c8c8c81a;
+    
+    --context-menu-transparency: #0f0f0f;
+    
+    --add-discover-icon-transparency: #c8c8c826;
+    --add-discover-icon-color: #43b581;
+    --channel-limit-count-color: #43b581;
+    --channel-limit-background-left: #c8c8c81a;
+    --channel-limit-background-right: #c8c8c833;
+
+    --scrollbar-width: 7px !important;
+
+    /*Mark as read*/
+    --new-messages-bar-font-color: #ffffff; 
+    --message-search-container-background-color: #151719;
+
+    --text-voice-channel-color: #8e9297ff;
+    --text-voice-channel-hover-color: #dcddde; /*#dcddde*/
+    --text-voice-channel-selected-text-color: #ffffff;
+    --unread-text-channel-color: #ffffff;
+    --unread-text-channel-bubble-color: #ffffff;
+    --folder-background-color: #2f3136 !important;
+    --expanded-folder-background-color: #00000000;
+    --reaction-emoji-background-color: #00000000;
+    --reaction-emoji-border-color: 1px solid transparent;
+    --reaction-emoji-hover-background-color: #ffffff1a;
+    --reaction-emoji-hover-border-color: #ffffff33;
+}
+
+/*Message box popout blur*/
+.theme-dark .autocomplete-3NRXG8 {
+  backdrop-filter: blur(5px);
+}
+
+/*The thing next to the popout of message box*/
+.wrapper-3z7DuG {
+  background-color: #00000080;
+}
+
+/*Message box in small profile popout*/
+.input-2z42oC{
+  background-color: #0f0f0f99;
+}
+
+/* Hide nitro button in DM */
+[href="/store"] {
+  display: none;
+}
+
+/* Hide gift button in text box */
+[aria-label="Send a gift"] {
+  display: none;
+}
+
+
+/* Selected/Current active channel */
+.modeSelected__487d6 {
+  background-color: rgba(220, 17, 2, 0.4) !important;
+}
+
+/* Selected member */
+.member_aa4760.selected__9800b {
+  background-color: transparent !important;
+}
+
+.members__9f47b .container__4f20e.selected__9800b .layout_bb8e67 {
+  background-color: rgba(220, 17, 2, 0.4) !important;
+}
+
+/* Server Name Title */
+.sidebar_ded4b5 .container__7c79d:not(.hasBanner_e78601) .header__104ca {
+  background-color: transparent !important;
+}
+
+/* Top Bar, Message History, Right Sidebar */
+.chat__52833 {
+  background-color: transparent !important;
+}
+
+/* Chat box surrounding BG */
+.form__13a2c {
+  background-color: transparent !important;
+}
+
+/* Nitro boost progress */
+.progressBar_db0972 {
+  background: linear-gradient(to right, white, red) !important;
+}
+
+/* Title bar, left and right part. */
+.wordmark__0d178.wordmarkWindows__05c46:before {
+  content: "nameless";
+  font-weight: 700;
+}
+
+.wordmark__0d178.wordmarkWindows__05c46:after {
+  content: "*";
+}
+
+/* Un-transparent the GIF/Sticker/Emoji picker. */
+/* The one right below is to fix the broken search UI. */
+.contentWrapper__321ed {
+  background-color: #151719;
+}
+
+.header_f71767, .header_f7f1f3 {
+  background-color: transparent;
+}
+
+/* Download, Add Server and Discovery button */
+.circleIconButton_d8df29:hover, .circleIconButton_d8df29:focus, .circleIconButton_d8df29:active {
+  background-color: var(--main-theme-color) !important;
+}
+
+/* Discovery category hover */
+.categoryItem_b1be5c:hover  {
+    background-color: rgba(220, 17, 2, 0.4) !important;
+}
+
+/* Discovery category active */
+.selected__9800b {
+  background-color: var(--main-theme-color) !important;
+}
+
+/* Discovery dupe color fix */
+.sidebar_ded4b5 .container__4f20e.selected__9800b .layout_bb8e67 {
+  background-color: transparent;
+}
+
+/* Discovery remove BG */
+.pageWrapper_fef757 {
+  background-color: transparent !important;
+}
+
+/* BOT tag */
+.botTag_a52f38, .botTag__4211a {
+  background-color: var(--main-theme-color) !important;
+}
+
+/* Mark as read button */
+.barButtonBase__8fa46 {
+  background-color: rgba(220, 17, 2, 0.6) !important;
+}
+
+/* Unread divider & pill */
+.messagesWrapper_ea2b0b, .divider_b9338f {
+  border-top-color: var(--main-theme-color) !important;
+}
+
+.unreadPill__715fc {
+  background-color: var(--main-theme-color) !important;
+}
+
+/* Server folder */
+.closedFolderIconWrapper__7321f {
+  background-color: #151719 !important;
+}
+
+/* User Area */
+.container_ca50b9 {
+  background-color: #151719 !important;
+}
+
+/* Community/Partner/... icon */
+.flowerStar_a9981e path {
+  fill: var(--main-theme-color);
+}
