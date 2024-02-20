@@ -80,6 +80,16 @@
   display: none;
 }
 
+/* Hide top section fade */
+.theme-dark .children__32014:after {
+  display: none;
+}
+
+/* Hide channel list fade */
+.container__590e2:after {
+  display: none;
+}
+
 /* Selected/Current active channel */
 .modeSelected__487d6 {
   background-color: rgba(220, 17, 2, 0.4) !important;
