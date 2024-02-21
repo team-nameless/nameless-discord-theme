@@ -84,6 +84,11 @@
   display: none;
 }
 
+/* Fix broken (blue text color) button texts */
+.contents_fb6220 {
+  color: white;
+}
+
 /* All buttons */
 .lookFilled__19298 {
   --button-background: var(--main-theme-color) !important;
@@ -155,6 +160,27 @@
   background-color: transparent;
 }
 
+/* GIF/Sticker icon hover on message box. */
+.buttonWrapper__69593 svg:hover {
+  color: var(--main-theme-color) !important;
+}
+
+/* GIF/Sticker search box. */
+.container_e4c233 .input_f4043f {
+  border: 3px solid var(--main-theme-color) !important;
+  border-radius: 15px;
+}
+
+/* GIF hover */
+.result_e1fc74:hover:after {
+  box-shadow: inset 0 0 0 2px var(--main-theme-color), inset 0 0 1px 3px #2f3136 !important;
+}
+
+/* "Add Sticker" icon */
+.iconWrapper_ced58f {
+  background-color: var(--main-theme-color);
+}
+
 /* Download, Add Server and Discovery button */
 .circleIconButton_d8df29:hover, 
 .circleIconButton_d8df29.selected__5250e,
@@ -196,7 +222,7 @@
 }
 
 /* "Try searching for them." text in discovery. */
-.lookLink__93965 {
+.button_afdfd9.lookLink__93965.lowSaturationUnderline__95e71.colorLink_b651e5.sizeMin__94642.grow__4c8a4 .contents_fb6220 {
   color: rgb(220, 17, 2) !important;
 }
 
@@ -305,11 +331,6 @@
   background-color: #151719f0 !important;
 }
 
-/* Fix broken (blue text color) button texts */
-.contents_fb6220 {
-  color: white !important;
-}
-
 /* Mention highlight */
 .mentioned__58017 .messageContent__21e69 {
   background-color: rgba(220, 17, 2, 0.3) !important;
@@ -323,4 +344,18 @@
 /* Shop BG */
 .pageWrapper__582b9.pageWrapperBackgroundPrimary__74f14 {
   background-color: transparent !important; 
+}
+
+/* Channels & Roles menu */
+.container__10dc7 {
+  background-color: transparent !important; 
+}
+
+/* Channels & Roles checked items */
+.checkIcon__5aa1f {
+  background-color: var(--main-theme-color); 
+}
+
+.checkbox_c7f690.box__66058.checked__24ad6 {
+  background-color: var(--main-theme-color); 
 }
