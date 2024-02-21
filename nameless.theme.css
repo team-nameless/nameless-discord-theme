@@ -86,11 +86,12 @@
 
 /* All buttons */
 .lookFilled__19298 {
+  --button-background: var(--main-theme-color) !important;
   background-color: var(--main-theme-color) !important;
 }
 
 /* Hide top section fade */
-.theme-dark .children__32014:after {
+.children__32014:after {
   display: none;
 }
 
@@ -302,4 +303,24 @@
 /* "Acronym" Discord Guild Icon */
 .childWrapper__01b9c.acronym_cd4809 {
   background-color: #151719f0 !important;
+}
+
+/* Fix broken (blue text color) button texts */
+.contents_fb6220 {
+  color: white !important;
+}
+
+/* Mention highlight */
+.mentioned__58017 .messageContent__21e69 {
+  background-color: rgba(220, 17, 2, 0.3) !important;
+}
+
+/* Reply highlight fix */
+.repliedTextContent__75526.markup_a7e664.messageContent__21e69 {
+  background-color: rgba(220, 17, 2, 0.1) !important;
+}
+
+/* Shop BG */
+.pageWrapper__582b9.pageWrapperBackgroundPrimary__74f14 {
+  background-color: transparent !important; 
 }
