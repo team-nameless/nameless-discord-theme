@@ -6,16 +6,20 @@
     --theme-background-image: var(--bg-nagato);
 
     /*Main*/
-    --main-theme-color: rgba(220, 17, 2, 0.5);
+    --main-theme-color: rgb(220, 17, 2);
     --theme-transparency: #000000c0;
+    
     --home-icon-image: url('https://i.imgur.com/AZFNXE3.jpeg');
     --home-icon-image-zoom: 100%;
-    --home-icon-image-position: center;
-    --server-listing-width: 72px;
+    
+    --server-listing-width: 65px;
     --mention-color: #faa61a0d;
     --mention-sider: #faa61aff;
     --mention-hover-color: #faa61a14;
+
+    --category-background-color: #ffffff;
     --category-hover-color: #ffc5dd;
+
     --unread-server-animation: none;
     --video-screen-button-background-color: #c8c8c833;
     --video-screen-button-foreground-color: #ffffffff;
@@ -31,8 +35,8 @@
     --context-menu-transparency: #0f0f0f;
     
     --add-discover-icon-transparency: #c8c8c826;
-    --add-discover-icon-color: #43b581;
-    --channel-limit-count-color: #43b581;
+    --add-discover-icon-color: var(--main-theme-color);
+    --channel-limit-count-color: var(--main-theme-color);
     --channel-limit-background-left: #c8c8c81a;
     --channel-limit-background-right: #c8c8c833;
 
@@ -80,6 +84,11 @@
   display: none;
 }
 
+/* All buttons */
+.lookFilled__19298 {
+  background-color: var(--main-theme-color) !important;
+}
+
 /* Hide top section fade */
 .theme-dark .children__32014:after {
   display: none;
@@ -119,17 +128,18 @@
   background-color: transparent !important;
 }
 
-/* Nitro boost progress */
+/* Nitro boost progress bar */
 .progressBar_db0972 {
   background: linear-gradient(to right, white, red) !important;
 }
 
-/* Title bar, left and right part. */
+/* Title bar, left part. */
 .wordmark__0d178.wordmarkWindows__05c46:before {
   content: "nameless";
   font-weight: 700;
 }
 
+/* Title bar, right part. */
 .wordmark__0d178.wordmarkWindows__05c46:after {
   content: "*";
 }
@@ -176,7 +186,15 @@
   background-color: transparent !important;
 }
 
-/* "Try searching for them" text */
+/* Student Hubs "Join Hub" text alignment fix. */
+.text-sm-semibold__41578.addButton__7e2ae {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* "Try searching for them." text in discovery. */
 .lookLink__93965 {
   color: rgb(220, 17, 2) !important;
 }
@@ -241,13 +259,8 @@
   background-color: var(--main-theme-color) !important;
 }
 
-/* "New" */
+/* "New" in "channel & roles" */
 .newChannel_f99b92.textBadge__45d79.base__92a12.eyebrow__60985.baseShapeRound__95d0f {
-  background-color: var(--main-theme-color) !important;
-}
-
-/* "Follow this channel" ... */
-.button_afdfd9.lookFilled__19298.colorPrimary__6ed40.grow__4c8a4 {
   background-color: var(--main-theme-color) !important;
 }
 
@@ -257,6 +270,36 @@
 }
 
 /* Server status: streaming, staging, ... */
-.iconBadge_fdf33a {
+.iconBadge_fdf33a, .pinIcon__2e5b2 {
   background-color: var(--main-theme-color) !important;
+}
+
+/* Category */
+.name__590d6.container_de798d:not(:hover) {
+  color: white !important;
+}
+
+/* "New" in forum. */
+.text-xs-semibold_a3a2b4 {
+  color: var(--main-theme-color) !important;
+}
+
+/* "New Unreads" button */
+.bar__004d9 {
+  background-color: var(--main-theme-color);
+}
+
+/* "New Unreads" text */
+.text-xs-semibold_a3a2b4.barText__1a44f {
+  color: white !important;
+}
+
+/* Forum BG */
+.container_b181b6 {
+  background-color: transparent !important;
+}
+
+/* "Acronym" Discord Guild Icon */
+.childWrapper__01b9c.acronym_cd4809 {
+  background-color: #151719f0 !important;
 }
