@@ -7,8 +7,10 @@
 
     /*Main*/
     --main-theme-color: rgb(220, 17, 2);
+    /*dark color calculate using css color-mix(in srgb, var(--main-theme-color) 50%, rgb(0, 0, 0))*/
+    --main-theme-color-dark: #6e0801;
     --theme-transparency: #000000c0;
-    
+
     --home-icon-image: url('https://i.imgur.com/AZFNXE3.jpeg');
     --home-icon-image-zoom: 100%;
     
@@ -74,8 +76,9 @@
   background-color: #0f0f0f99;
 }
 
-/* Hide nitro button in DM */
-[href="/store"] {
+/* Hide all paid button in DM */
+[href="/store"],
+[href="/shop"] {
   display: none;
 }
 
@@ -258,7 +261,9 @@
 
 /* User Area */
 .container_ca50b9 {
-  background-color: #151719 !important;
+  background-color: var(--main-theme-color-dark) !important;
+  border: 2px solid var(--main-theme-color);
+  border-radius: var(--popout-radius-big);
 }
 
 /* Community/Partner/... icon */
@@ -281,9 +286,16 @@
   background-color: #1517199f !important; 
 }
 
+/* margin for border */
+.interactive_a868bc {
+  margin: 2px;
+}
+
 /* Friends/Message Requests/Shop button */
-.linkButton_ebd2ba:hover, .selected_d94cf9 {
-  background-color: var(--main-theme-color) !important;
+.interactive__776ee.selected_d94cf9 {
+  margin: 0 !important;
+  border: 2px solid var(--main-theme-color) !important;
+  background-color: var(--main-theme-color-dark) !important;
 }
 
 /* "New" in "channel & roles" */
@@ -333,6 +345,8 @@
 
 /* Mention highlight */
 .mentioned__58017 .messageContent__21e69 {
+  padding: 6px 12px !important;
+  margin-left: -8px !important;
   background-color: rgba(220, 17, 2, 0.3) !important;
 }
 
@@ -358,4 +372,27 @@
 
 .checkbox_c7f690.box__66058.checked__24ad6 {
   background-color: var(--main-theme-color); 
+}
+
+/* Keep message clean by using transparent */
+.wrapper__09ecc {
+  background-color: #00000000 !important;
+}
+
+/* Remove that weird triagle next to every 2nd message */
+.wrapper__09ecc:not(.groupStart__56db5):before, .wrapper__09ecc:not(.groupStart__56db5):after {
+  display: none;
+}
+
+/* Match message hover color */
+.theme-dark .message__80c10.selected_fd9051, .theme-dark.mouse-mode.full-motion .message__80c10:hover {
+  background-color: var(--message-color-hover) !important;
+}
+
+/* Weird scrollbar behavior on the browser due to default import CSS */
+.auto_a48086,
+.thin__62e51,
+.thin_b1c063 {
+  scrollbar-width: auto !important;
+  scrollbar-color: auto !important;
 }
