@@ -313,11 +313,6 @@
   background-color: var(--main-theme-color) !important;
 }
 
-/* Category */
-.name__590d6.container_de798d:not(:hover) {
-  color: white !important;
-}
-
 /* "New" in forum. */
 .text-xs-semibold_a3a2b4 {
   color: var(--main-theme-color) !important;
@@ -395,4 +390,14 @@
 .thin_b1c063 {
   scrollbar-width: auto !important;
   scrollbar-color: auto !important;
+}
+
+.messagesWrapper_ea2b0b.group-spacing-16 .groupStart__56db5 {
+  --group-spacing: 0.3rem !important;
+}
+
+.speaking_c1b30e,
+.avatarSpeaking_c95053 {
+  box-shadow: inset 0 0 0 2px var(--main-theme-color),inset 0 0 0 3px var(--main-theme-color-dark);
+  transition: box-shadow 0.2s;
 }
